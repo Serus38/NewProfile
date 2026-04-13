@@ -1,0 +1,40 @@
+:root {
+    --primary-navy: #023e7d;
+    --secondary-navy: #023e7d;
+    --dark-bg: #050505;
+    --darker-bg: #050505;
+    --text-light: #e0e7ff;
+    --text-accent: #a5b4fc;
+    --accent-blue: #023e7d;
+    --white: #ffffff;
+    --shadow: 0 10px 30px rgba(2, 62, 125, 0.2);
+    --shadow-hover: 0 15px 40px rgba(2, 62, 125, 0.3);
+    --transition: all 0.3s ease;
+}
+
+/* Reset y estilos globales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--text-light);
+    background: #050505;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
+/* Contenedor */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
