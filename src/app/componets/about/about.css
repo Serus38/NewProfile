@@ -1,0 +1,153 @@
+.about {
+    padding: 100px 20px;
+    background: #050505;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-shell {
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.about-kicker {
+    margin-bottom: 2.5rem;
+    text-align: center;
+    color: #023e7d;
+    font-size: 1.05rem;
+    letter-spacing: 0.75rem;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.about-lead {
+    margin: 0 auto;
+    max-width: 1220px;
+    text-align: center;
+    color: #f6f7ff;
+    font-size: clamp(1.1rem, 2.2vw, 1.1rem);
+    line-height: 1.45;
+    font-weight: 500;
+}
+
+.about-body {
+    margin: 2.5rem auto 0;
+    max-width: 1120px;
+    text-align: center;
+    color: var(--text-accent);
+    font-size: clamp(1.1rem, 1.95vw, 1.1rem);
+    line-height: 1.55;
+    font-weight: 400;
+}
+
+.about-body-last {
+    max-width: 1080px;
+    margin-top: 1.9rem;
+}
+
+.highlight-primary {
+    color: #023e7d;
+}
+
+.highlight-strong {
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.about-stats {
+    margin: 5rem auto 0;
+    max-width: 980px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0;
+}
+
+.stat-item {
+    text-align: center;
+    padding: 0 1.5rem;
+}
+
+.stat-item + .stat-item {
+    border-left: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.stat-item h3 {
+    margin: 80px 0 0    ;
+    color: #ffffff;
+    font-size: clamp(1.5rem, 3.3vw, 1.8rem);
+    line-height: 1;
+    font-weight: 800;
+    letter-spacing: 0.02em;
+}
+
+.stat-item img {
+    width: 120px;
+    height: auto;
+    margin-bottom: 0.75rem;
+}
+
+.stat-item p {
+    margin: 0.75rem 0 0;
+    color: #023e7d;
+    font-size: 1.05rem;
+    letter-spacing: 0.38rem;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+@media (max-width: 1024px) {
+    .about-kicker {
+        letter-spacing: 0.52rem;
+    }
+
+    .about-body {
+        font-size: clamp(1.25rem, 1.65vw, 1.9rem);
+    }
+}
+
+@media (max-width: 768px) {
+    .about {
+        min-height: auto;
+        padding: 5.2rem 1.25rem 4.2rem;
+    }
+
+    .about-kicker {
+        letter-spacing: 0.28rem;
+        font-size: 0.88rem;
+    }
+
+    .about-lead {
+        font-size: clamp(1.1rem, 6vw, 1.1rem);
+        line-height: 1.6;
+    }
+
+    .about-body {
+        font-size: clamp(1.03rem, 4.5vw, 1.3rem);
+    }
+
+    .about-stats {
+        grid-template-columns: 1fr;
+        gap: 1.8rem;
+    }
+
+    .stat-item + .stat-item {
+        border-left: 0;
+    }
+
+    .stat-item {
+        border-top: 1px solid rgba(255, 255, 255, 0.12);
+        padding-top: 1.8rem;
+    }
+
+    .stat-item:first-child {
+        border-top: 0;
+        padding-top: 0;
+    }
+}

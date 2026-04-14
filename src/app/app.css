@@ -1,40 +1,51 @@
-:root {
-    --primary-navy: #023e7d;
-    --secondary-navy: #023e7d;
-    --dark-bg: #050505;
-    --darker-bg: #050505;
-    --text-light: #e0e7ff;
-    --text-accent: #a5b4fc;
-    --accent-blue: #023e7d;
-    --white: #ffffff;
-    --shadow: 0 10px 30px rgba(2, 62, 125, 0.2);
-    --shadow-hover: 0 15px 40px rgba(2, 62, 125, 0.3);
-    --transition: all 0.3s ease;
+:host {
+    display: block;
 }
 
-/* Reset y estilos globales */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6;
-    color: var(--text-light);
-    background: #050505;
-    background-attachment: fixed;
+.app-container {
     min-height: 100vh;
 }
 
-/* Contenedor */
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+.page-content {
+    padding-top: 5.5rem;
+}
+
+app-hero-section,
+app-about,
+app-projects,
+app-contact,
+app-footer {
+    display: block;
+}
+
+.scroll-to-top {
+    position: fixed;
+    right: 24px;
+    bottom: 24px;
+    width: 52px;
+    height: 52px;
+    border-radius: 999px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: linear-gradient(135deg, var(--primary-navy), var(--secondary-navy));
+    color: var(--white);
+    font-size: 1.4rem;
+    line-height: 1;
+    cursor: pointer;
+    box-shadow: var(--shadow);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(8px);
+    transition: var(--transition);
+    z-index: 1100;
+}
+
+.scroll-to-top.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.scroll-to-top:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-hover);
 }
