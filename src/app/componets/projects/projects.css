@@ -12,10 +12,11 @@
 .projects-kicker {
     text-align: center;
     color: var(--accent-blue);
-    letter-spacing: 0.28rem;
-    font-size: 0.82rem;
+    letter-spacing: clamp(0.18rem, 0.75vw, 0.5rem);
+    font-size: clamp(0.85rem, 1.25vw, 1rem);
     font-weight: 700;
     margin-bottom: 0.75rem;
+    text-transform: uppercase;
 }
 
 .proyectos h2 {

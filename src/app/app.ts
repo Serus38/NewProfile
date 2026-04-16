@@ -5,10 +5,11 @@ import { About } from './componets/about/about';
 import { Projects } from './componets/projects/projects';
 import { Contact } from './componets/contact/contact';
 import { Footer } from './componets/footer/footer';
+import { StackTec } from './componets/stack-tec/stack-tec';
 
 @Component({
   selector: 'app-root',
-  imports: [Navbar, HeroSection, About, Projects, Contact, Footer],
+  imports: [Navbar, HeroSection, About, Projects, Contact, Footer, StackTec],
   templateUrl: './app.html',
   styleUrl: './app.css',
   host: {

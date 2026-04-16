@@ -1,1 +1,19 @@
-<p>stack-tec works!</p>
+<section id="stack-tec" class="stack-tec">
+    <div class="container stack-shell">
+        <p class="stack-kicker">TECNOLOGÍAS</p>
+        <h2>Stack Tecnológico</h2>
+        <div class="stack-grid">
+            @for (technology of technologies; track technology.name) {
+                <article class="stack-card">
+                    <img
+                        [ngSrc]="technology.image"
+                        [alt]="technology.name"
+                        width="40"
+                        height="40"
+                    >
+                </article>
+            }
+        </div>
+    </div>
+
+</section>
