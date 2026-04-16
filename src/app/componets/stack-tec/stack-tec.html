@@ -1,7 +1,7 @@
 <section id="stack-tec" class="stack-tec">
     <div class="container stack-shell">
-        <p class="stack-kicker">TECNOLOGÍAS</p>
-        <h2>Stack Tecnológico</h2>
+        <p class="stack-kicker">{{ labels().kicker }}</p>
+        <h2>{{ labels().title }}</h2>
         <div class="stack-grid">
             @for (technology of technologies; track technology.name) {
                 <article class="stack-card">

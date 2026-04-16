@@ -1,15 +1,15 @@
 <section id="contact" class="contact">
     <div class="container contact-shell">
-        <p class="contact-kicker">CONTACTO</p>
+        <p class="contact-kicker">{{ labels().kicker }}</p>
 
-        <div class="contact-actions" role="group" aria-label="Canales de contacto">
-            @for (action of contactActions; track action.label) {
+        <div class="contact-actions" role="group" [attr.aria-label]="labels().channelsAriaLabel">
+            @for (action of contactActions(); track action.key) {
                 <a
                     class="contact-action"
                     [href]="action.href"
                     [attr.target]="action.target ?? null"
                     [attr.rel]="action.rel ?? null"
-                    [attr.aria-label]="'Contactar por ' + action.label"
+                    [attr.aria-label]="labels().contactByPrefix + ' ' + action.label"
                 >
                     <span class="contact-action-icon" aria-hidden="true">
                         <img

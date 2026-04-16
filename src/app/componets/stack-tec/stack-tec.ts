@@ -1,10 +1,16 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component, computed, inject } from '@angular/core';
 import { NgOptimizedImage } from '@angular/common';
+import { LanguageService } from '../../services/language.service';
 
 interface TechnologyItem {
   name: string;
   image: string;
 }
+
+type StackLabels = {
+  kicker: string;
+  title: string;
+};
 
 @Component({
   selector: 'app-stack-tec',
@@ -14,6 +20,22 @@ interface TechnologyItem {
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class StackTec {
+  private readonly languageService = inject(LanguageService);
+
+  readonly labels = computed<StackLabels>(() => {
+    if (this.languageService.currentLanguage() === 'en') {
+      return {
+        kicker: 'TECHNOLOGIES',
+        title: 'Tech Stack',
+      };
+    }
+
+    return {
+      kicker: 'TECNOLOGIAS',
+      title: 'Stack Tecnologico',
+    };
+  });
+
   readonly technologies: TechnologyItem[] = [
     { name: 'Java', image: '/img/icon-java.png' },
     { name: 'Spring Boot', image: '/img/icon-spring-boot.png' },

@@ -13,7 +13,7 @@
       class="scroll-to-top"
       type="button"
       [class.show]="isScrollToTopVisible()"
-      aria-label="Volver arriba"
+      [attr.aria-label]="scrollToTopAriaLabel()"
       (click)="scrollToTop()"
     >
       ↑

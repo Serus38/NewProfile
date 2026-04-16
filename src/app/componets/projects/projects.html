@@ -1,7 +1,7 @@
 <section id="proyectos" class="proyectos">
     <div class="container projects-shell">
-        <p class="projects-kicker">PROYECTOS DESTACADOS</p>
-        <h2>Soluciones desarrolladas</h2>
+        <p class="projects-kicker">{{ labels().kicker }}</p>
+        <h2>{{ labels().title }}</h2>
 
         <div class="projects-grid">
             <article class="project-card">
@@ -9,13 +9,10 @@
                     <span class="project-icon" aria-hidden="true">
                         <i class="bi bi-box-seam"></i>
                     </span>
-                    <span class="project-badge1">FULLSTACK / API</span>
+                    <span class="project-badge1">{{ labels().card1Badge }}</span>
                 </div>
-                <h3>Seguimiento de envios</h3>
-                <p>
-                    Desarrollo de una interfaz web para el seguimiento de envios, con funcionalidades de autenticacion,
-                    visualizacion de rutas y actualizaciones en tiempo real, optimizando la experiencia del usuario.
-                </p>
+                <h3>{{ labels().card1Title }}</h3>
+                <p>{{ labels().card1Description }}</p>
                 <div class="project-meta">
                     <div class="project-tags-group">
                         <span class="project-tags">Java</span>
@@ -24,7 +21,7 @@
                         <span class="project-tags">Angular</span>
                     </div>
                     <div class="social-icons">
-                        <a href="https://github.com/Serus38" target="_blank" rel="noopener noreferrer">
+                        <a href="https://github.com/Serus38/Test-dev.git" target="_blank" rel="noopener noreferrer">
                             <img class="social-icon github-icon" src="/img/github.png" alt="GitHub">
                         </a>
                     </div>
@@ -36,13 +33,10 @@
                     <span class="project-icon" aria-hidden="true">
                         <i class="bi bi-file-earmark-bar-graph"></i>
                     </span>
-                    <span class="project-badge2">DASHBOARD / ANALISIS</span>
+                    <span class="project-badge2">{{ labels().card2Badge }}</span>
                 </div>
-                <h3>Dashboard de Analisis</h3>
-                <p>
-                    Creacion de un dashboard interactivo para el analisis de datos, utilizando visualizaciones dinamicas
-                    y herramientas de filtrado para facilitar la toma de decisiones basada en datos.
-                </p>
+                <h3>{{ labels().card2Title }}</h3>
+                <p>{{ labels().card2Description }}</p>
                 <div class="project-meta">
                     <div class="project-tags-group">
                         <span class="project-tags">SQL</span>

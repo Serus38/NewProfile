@@ -1,22 +1,22 @@
  <section id="inicio" class="hero">
         <div class="hero-container">
             <div class="hero-content">
-                <h1>Desarrollador Software <span class="highlight">Full Stack</span></h1>
-                <p class="hero-subtitle">Desarrollador Web | Game Developer | Analista de datos</p>
-                <p class="hero-description">Desarrollador Full Stack enfocado en backend y análisis de datos. Construyo APIs robustas con Java y Spring Boot, y transformo datos en decisiones con Power BI.</p>
+                <h1>{{ labels().title }} <span class="highlight">{{ labels().titleHighlight }}</span></h1>
+                <p class="hero-subtitle">{{ labels().subtitle }}</p>
+                <p class="hero-description">{{ labels().description }}</p>
                 
                 <div class="hero-buttons">
-                    <a href="#proyectos" class="cta-button">VER PROYECTOS</a>
-                    <a href="/docs/CV_Sergio_Rivera_Urrea_ATS.pdf" class="cta-button secondary" target="_blank" rel="noopener noreferrer">DESCARGAR CV</a>
+                    <a href="#proyectos" class="cta-button">{{ labels().viewProjects }}</a>
+                    <a href="/docs/CV_Sergio_Rivera_Urrea_ATS.pdf" class="cta-button secondary" target="_blank" rel="noopener noreferrer">{{ labels().downloadCv }}</a>
                 </div>
 
                 <div class="hero-contact">
                     <div class="contact-item">
-                        <span class="contact-label">CORREO</span>
+                        <span class="contact-label">{{ labels().email }}</span>
                         <span class="contact-value">matambita08@gmail.com</span>
                     </div>
                     <div class="contact-item">
-                        <span class="contact-label">TELÉFONO</span>
+                        <span class="contact-label">{{ labels().phone }}</span>
                         <span class="contact-value">+57 301 731 9664</span>
                     </div>
                     <div class="social-icons">
@@ -31,7 +31,7 @@
             </div>
 
             <div class="hero-image">
-                <img src="/img/perfil%20profesional.png" alt="Foto de perfil">
+                <img src="/img/perfil%20profesional.png" [alt]="labels().profileAlt">
             </div>
         </div>
     </section>
