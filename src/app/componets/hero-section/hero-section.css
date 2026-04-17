@@ -251,6 +251,12 @@
 }
 
 @media (max-width: 768px) {
+    .hero::before {
+        background:
+            radial-gradient(circle at 52% 24%, rgba(2, 62, 125, 0.34) 0%, rgba(2, 62, 125, 0.2) 38%, transparent 76%),
+            radial-gradient(circle at 18% 82%, rgba(12, 82, 180, 0.2) 0%, transparent 62%);
+    }
+
     .hamburger {
         display: flex;
     }

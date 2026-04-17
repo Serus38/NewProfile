@@ -106,11 +106,21 @@
     margin: 0;
 }
 
+.project-description-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+}
+
+.project-description-row p {
+    flex: 1;
+}
+
 .project-meta {
     display: flex;
     align-items: center;
     gap: 0.7rem;
-    margin-top: 1rem;
+    margin-top: 0.9rem;
 }
 
 .project-tags-group {
@@ -134,7 +144,7 @@
 .social-icons {
     display: flex;
     align-items: center;
-    margin-left: 5.5rem;
+    margin-left: 0;
     flex-shrink: 0;
 }
 
@@ -188,12 +198,21 @@
         padding: 4.8rem 1rem;
     }
 
+    .project-description-row {
+        gap: 0.55rem;
+    }
+
+    .project-description-row .social-icon {
+        width: 34px;
+        height: 34px;
+    }
+
     .project-meta {
         flex-wrap: wrap;
     }
 
     .social-icons {
-        margin-left: 2rem;
+        margin-left: 0;
     }
 
     .project-card {

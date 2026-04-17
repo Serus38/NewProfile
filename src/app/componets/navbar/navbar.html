@@ -1,6 +1,6 @@
 <nav class="navbar">
     <div class="nav-container">
-        <div class="logo">{{ labels().logo }}</div>
+        <a href="#inicio" class="logo" (click)="closeMenu()">{{ labels().logo }}</a>
 
         <ul class="nav-menu" [class.nav-menu-open]="isMenuOpen()">
             <li><a href="#inicio" class="nav-link" (click)="closeMenu()">{{ labels().home }}</a></li>
