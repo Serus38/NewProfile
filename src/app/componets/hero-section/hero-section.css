@@ -128,11 +128,11 @@
 }
 
 .social-icon.github-icon {
-    filter: grayscale(1);
+    filter: invert(1);
 }
 
 .social-icon.github-icon:hover {
-    filter: brightness(0) invert(1);
+    filter: invert(0);
     transform: scale(1.15);
 }
 
