@@ -23,6 +23,12 @@ type HeroLabels = {
 export class HeroSection {
   private readonly languageService = inject(LanguageService);
 
+  readonly cvHref = computed(() =>
+    this.languageService.currentLanguage() === 'en'
+      ? '/docs/CV_Sergio_Rivera_Urrea_ATS_EN.pdf'
+      : '/docs/CV_Sergio_Rivera_Urrea_ATS.pdf'
+  );
+
   readonly labels = computed<HeroLabels>(() => {
     if (this.languageService.currentLanguage() === 'en') {
       return {

@@ -7,7 +7,7 @@
                 
                 <div class="hero-buttons">
                     <a href="#proyectos" class="cta-button">{{ labels().viewProjects }}</a>
-                    <a href="/docs/CV_Sergio_Rivera_Urrea_ATS.pdf" class="cta-button secondary" target="_blank" rel="noopener noreferrer">{{ labels().downloadCv }}</a>
+                    <a [href]="cvHref()" class="cta-button secondary" target="_blank" rel="noopener noreferrer">{{ labels().downloadCv }}</a>
                 </div>
 
                 <div class="hero-contact">
