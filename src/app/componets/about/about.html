@@ -1,58 +1,65 @@
 <section id="about" class="about">
-    <div class="container about-shell">
-        <p class="about-kicker">{{ labels().kicker }}</p>
+  <div class="container about-shell">
+    <p class="about-kicker">{{ labels().kicker }}</p>
 
-        @if (isEnglish()) {
-            <p class="about-lead">
-                Junior Full Stack Software Developer focused on backend and data analytics, oriented to transform business needs into efficient, scalable, and well-structured technology solutions.
-            </p>
+    @if (isEnglish()) {
+      <p class="about-lead">
+        Junior Full Stack Developer focused on backend and data analytics. My approach centers on transforming business needs into efficient, scalable, and well-structured technological solutions.
+      </p>
 
-            <p class="about-body">
-                I have experience developing REST APIs with
-                <span class="highlight-primary">Java and Spring Boot</span>, and building dashboards in
-                <span class="highlight-primary">Power BI</span> for decision-making, integrating data from
-                <span class="highlight-primary">SQL Server</span>, SharePoint, and other enterprise sources. My experience with
-                <span class="highlight-strong">SQL</span> helps me ensure information flows efficiently, consistently, and securely.
-            </p>
+      <p class="about-body">
+        I have technical experience developing REST APIs with
+        <span class="highlight-primary">Java and Spring Boot</span>, ensuring seamless data integration. I complement this technical expertise with the creation of 
+        <span class="highlight-primary">Power BI</span> dashboards for strategic decision-making, managing databases in
+        <span class="highlight-primary">SQL Server</span>, SharePoint, and other enterprise sources.
+        My experience with <span class="highlight-strong">SQL</span> helps me ensure information
+        flows efficiently, consistently, and securely.
+      </p>
 
-            <p class="about-body about-body-last">
-                I have worked in collaborative environments under agile methodologies such as
-                <span class="highlight-strong">SCRUM</span>, contributing to process optimization and task automation. I focus on continuous learning and on modern technologies such as <span class="highlight-primary">Angular</span> and <span class="highlight-primary">React</span> to keep strengthening my developer profile.
-            </p>
-        } @else {
-            <p class="about-lead">
-                Desarrollador de Software Full Stack Junior enfocado en backend y analisis de datos, orientado a transformar necesidades de negocio en soluciones tecnologicas eficientes, escalables y bien estructuradas.
-            </p>
+      <p class="about-body about-body-last">
+        I have worked in agile teams using the
+        <span class="highlight-strong">SCRUM</span> methodology, participating in process optimization and the automation of critical tasks. On the frontend, I develop dynamic interfaces with
+        <span class="highlight-primary">Angular</span> and
+        <span class="highlight-primary">React</span> connected to backend services. My goal is continuous evolution to consolidate Full Stack solutions oriented towards tangible results.
+      </p>
+    } @else {
+      <p class="about-lead">
+        Desarrollador Full Stack Junior enfocado en backend y análisis de datos. Mi enfoque se centra en transformar necesidades de negocio en soluciones tecnológicas eficientes,
+        escalables y bien estructuradas.
+      </p>
 
-            <p class="about-body">
-                Cuento con experiencia en el desarrollo de APIs REST con
-                <span class="highlight-primary">Java y Spring Boot</span>, asi como en la construccion de dashboards en
-                <span class="highlight-primary">Power BI</span> para la toma de decisiones, integrando datos desde
-                <span class="highlight-primary">SQL Server</span>, SharePoint y otras fuentes empresariales. Mi experiencia con
-                <span class="highlight-strong">SQL</span> me permite asegurar que la informacion fluya de manera eficiente, consistente y segura.
-            </p>
+      <p class="about-body">
+        Poseo experiencia técnica en el desarrollo de APIs REST con
+        <span class="highlight-primary">Java y Spring Boot</span>, garantizando una integración fluida de datos. Complemento esta visión tecnica con la creación de
+        dashboards en <span class="highlight-primary">Power BI</span> para la toma de decisiones estratégicas,
+        gestionando bases de datos en  <span class="highlight-primary">SQL Server</span>, SharePoint y otras
+        fuentes empresariales. Mi experiencia con <span class="highlight-strong">SQL</span> me
+        permite asegurar que la informacion fluya de manera eficiente, consistente y segura.
+      </p>
 
-            <p class="about-body about-body-last">
-                He trabajado en entornos colaborativos bajo metodologias agiles como
-                <span class="highlight-strong">SCRUM</span>, participando en la optimizacion de procesos y automatizacion de tareas. Me enfoco en el aprendizaje continuo y en el uso de tecnologias modernas como <span class="highlight-primary">Angular</span> y <span class="highlight-primary">React</span> para seguir fortaleciendo mi perfil como desarrollador.
-            </p>
-        }
+      <p class="about-body about-body-last">
+        He trabajado en equipos ágiles bajo metodología
+        <span class="highlight-strong">SCRUM</span>, participando en la optimizacion de procesos y
+        automatización de tareas críticas. En el frontend, desarrollo interfaces dinámicas con <span class="highlight-primary">Angular</span> y
+        <span class="highlight-primary">React</span> conectadas a servicios backend. Mi meta es la evolución constante para consolidar soluciones Full Stack orientadas a resultados tangibles.
+      </p>
+    }
 
-        <div class="about-stats" [attr.aria-label]="labels().statsAriaLabel">
-            <article class="stat-item">
-                <img src="img/logo-IUD.png" alt="IUD">
-                <p>{{ labels().education }}</p>
-            </article>
+    <div class="about-stats" [attr.aria-label]="labels().statsAriaLabel">
+      <article class="stat-item">
+        <img src="img/logo-IUD.png" alt="IUD" />
+        <p>{{ labels().education }}</p>
+      </article>
 
-            <article class="stat-item">
-                <h3>B1 Intermedio</h3>
-                <p>{{ labels().englishLevel }}</p>
-            </article>
+      <article class="stat-item">
+        <h3>B1 Intermedio</h3>
+        <p>{{ labels().englishLevel }}</p>
+      </article>
 
-            <article class="stat-item">
-                <h3>FULL</h3>
-                <p>{{ labels().role }}</p>
-            </article>
-        </div>
+      <article class="stat-item">
+        <h3>FULL</h3>
+        <p>{{ labels().role }}</p>
+      </article>
     </div>
+  </div>
 </section>

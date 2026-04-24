@@ -26,7 +26,7 @@ export class HeroSection {
   readonly cvHref = computed(() =>
     this.languageService.currentLanguage() === 'en'
       ? '/docs/CV_Sergio_Rivera_Urrea_ATS_EN.pdf'
-      : '/docs/CV_Sergio_Rivera_Urrea_ATS.pdf'
+      : '/docs/CV_Sergio_Rivera_Urrea_ATS.pdf',
   );
 
   readonly labels = computed<HeroLabels>(() => {
@@ -34,9 +34,9 @@ export class HeroSection {
       return {
         title: 'Software Developer',
         titleHighlight: 'Full Stack',
-        subtitle: 'Web Developer | Game Developer | Data Analyst',
+        subtitle: 'Java Backend Developer | Data Analyst',
         description:
-          'Full Stack developer focused on backend and data analysis. I build robust APIs with Java and Spring Boot, and turn data into decisions with Power BI.',
+          'Full Stack Developer specializing in Backend and Data Analytics. I build scalable architectures with Java and Spring Boot, transforming complex data into strategic decisions using Power BI..',
         viewProjects: 'VIEW PROJECTS',
         downloadCv: 'DOWNLOAD RESUME',
         email: 'EMAIL',
@@ -48,9 +48,9 @@ export class HeroSection {
     return {
       title: 'Desarrollador Software',
       titleHighlight: 'Full Stack',
-      subtitle: 'Desarrollador Web | Game Developer | Analista de datos',
+      subtitle: 'Desarrollador Backend en Java | Analista de datos',
       description:
-        'Desarrollador Full Stack enfocado en backend y analisis de datos. Construyo APIs robustas con Java y Spring Boot, y transformo datos en decisiones con Power BI.',
+        'Desarrollador Full Stack especializado en Backend y Análisis de Datos. Construyo arquitecturas escalables con Java y Spring Boot, transformando datos complejos en decisiones estratégicas mediante Power BI.',
       viewProjects: 'VER PROYECTOS',
       downloadCv: 'DESCARGAR CV',
       email: 'CORREO',
