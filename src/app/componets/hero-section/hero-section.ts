@@ -25,8 +25,8 @@ export class HeroSection {
 
   readonly cvHref = computed(() =>
     this.languageService.currentLanguage() === 'en'
-      ? '/docs/CV_Sergio_Rivera_Urrea_ATS_EN.pdf'
-      : '/docs/CV_Sergio_Rivera_Urrea_ATS.pdf',
+      ? '/docs/CV_Sergio_Rivera_Urrea_EN.pdf'
+      : '/docs/CV_Sergio_Rivera_Urrea.pdf',
   );
 
   readonly labels = computed<HeroLabels>(() => {
